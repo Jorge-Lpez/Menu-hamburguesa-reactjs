@@ -22,7 +22,7 @@ const Navbar = () => {
                     <nav className={ estilos ? "navegation active" : "navegation"} >
                         <ul>
                             { items.map( ( valor, index ) => (
-                                <li key={index} className={valor.cName}>
+                                <li onClick={onChangeEstilos} key={index} className={valor.cName}>
                                     <Link to={valor.path}>
                                         <i>{valor.icon}</i>
                                         <span>{valor.title}</span>
